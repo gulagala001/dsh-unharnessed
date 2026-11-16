@@ -35,7 +35,7 @@ result = await build
 result.exit_code, result.output[-2000:]
 ```
 
-Top-level await, trailing expressions, variables, functions and async tasks persist between cells. Shell handles expose pid, running, command, tail(), output(), poll(), kill() and await. An unconsumed background completion wakes the chat after the current turn. Reading its output withdraws a stale completion notice. Shell timeouts use seconds; timeout=None removes that command's deadline.
+Top-level await, trailing expressions, variables, functions and async tasks persist between cells. Shell handles expose pid, running, command, tail(), output(), poll(), kill() and await. An unconsumed background completion reaches the next step of active work or wakes an idle chat. Reading its output withdraws a stale completion notice. Shell timeouts use seconds; timeout=None removes that command's deadline for servers or long work; call the handle's kill() when finished. Stop, reset and preset changes clear obsolete process notices.
 
 ## Checkpoints across restarts
 
