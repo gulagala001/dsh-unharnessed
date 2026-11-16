@@ -1,0 +1,59 @@
+{
+  "name": "dsh-unharnessed",
+  "version": "0.2.2-dsh.0.2.2-rc.3",
+  "private": true,
+  "description": "在 DeepSeek Harness 中使用持久 Python、后台命令、MCP、图片与文件附件和可恢复的任务状态。",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/run.mjs",
+    "docs:check": "node scripts/check-docs.mjs",
+    "public:check": "node scripts/check-public-files.mjs",
+    "prepack": "npm run docs:check && npm run public:check"
+  },
+  "license": "MIT",
+  "engines": {
+    "dsh": ">=0.2.2-rc.3 <0.2.3-0",
+    "node": ">=24.9.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "~3.19.0",
+    "@deepseek-ai/dsh-tools": ">=0.2.2-rc.3 <0.2.3-0",
+    "@deepseek-ai/dsh-llm": ">=0.2.2-rc.3 <0.2.3-0",
+    "@deepseek-ai/dsh-system-prompt": ">=0.2.2-rc.3 <0.2.3-0",
+    "@deepseek-ai/dsh-attachment": ">=0.2.2-rc.3 <0.2.3-0",
+    "zod": "^4.6.6"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "python",
+    "vendor",
+    "tests",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "README_EN.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "docs/structure.json",
+    "scripts"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gulagala001/dsh-unharnessed.git"
+  }
+}
