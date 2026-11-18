@@ -1,7 +1,5 @@
 # DSH Unharnessed 0.3.0 · DSH 0.2.2-rc.3
 
-**未发布 / Unreleased.**
-
 [中文](#zh-030) · [English](#en-030)
 
 <a id="zh-030"></a>

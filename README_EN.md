@@ -9,7 +9,7 @@ Use one persistent Python tool in DeepSeek Harness for coding, background comman
 Paste this package URL into **Plugins → Add plugin**:
 
 ```text
-https://github.com/gulagala001/dsh-unharnessed/releases/download/v0.2.4-dsh.0.2.2-rc.3/dsh-unharnessed-0.2.4-dsh.0.2.2-rc.3.tgz
+https://github.com/gulagala001/dsh-unharnessed/releases/download/v0.3.0-dsh.0.2.2-rc.3/dsh-unharnessed-0.3.0-dsh.0.2.2-rc.3.tgz
 ```
 
 Select **Unharnessed** in a new chat. Existing chats can retain their original plugin revision; start a new chat or restart DSH normally after an update.

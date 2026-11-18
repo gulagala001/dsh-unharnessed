@@ -9,7 +9,7 @@
 在 **插件 → 添加插件** 中粘贴安装包地址：
 
 ```text
-https://github.com/gulagala001/dsh-unharnessed/releases/download/v0.2.4-dsh.0.2.2-rc.3/dsh-unharnessed-0.2.4-dsh.0.2.2-rc.3.tgz
+https://github.com/gulagala001/dsh-unharnessed/releases/download/v0.3.0-dsh.0.2.2-rc.3/dsh-unharnessed-0.3.0-dsh.0.2.2-rc.3.tgz
 ```
 
 然后在新聊天的 Agent 预设中选择 **Unharnessed**。已有聊天可能沿用启动时的插件修订，更新后新建聊天或正常重启 DSH。
