@@ -2,6 +2,8 @@
 
 [English](README_EN.md)
 
+[![GitHub 累计发行下载](https://img.shields.io/github/downloads/gulagala001/dsh-unharnessed/total?label=GitHub%20release%20downloads)](https://github.com/gulagala001/dsh-unharnessed/releases)
+
 在 DeepSeek Harness 中，用一个持久 Python 工具完成编程、后台命令、MCP 调用和图片与文件交付。变量可以跨对话压缩保留，并在相同会话重启后恢复。
 
 ## 安装与选择

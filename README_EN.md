@@ -2,6 +2,8 @@
 
 [简体中文](README.md)
 
+[![GitHub release downloads](https://img.shields.io/github/downloads/gulagala001/dsh-unharnessed/total?label=GitHub%20release%20downloads)](https://github.com/gulagala001/dsh-unharnessed/releases)
+
 Use one persistent Python tool in DeepSeek Harness for coding, background commands, MCP calls, and image and file delivery. Keep variables across context compaction and restore saved state when the same chat resumes.
 
 ## Install and select
