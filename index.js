@@ -454,6 +454,8 @@ export async function apply(ctx, input = {}) {
     const state = stateFor(agent)
     if (state.gateRun) return { kind: 'error', text: 'Wait for or stop the current gate check before resetting Python.' }
     await agent.runMaintenance(async () => {
+      await state.snapshots?.acquire()
+      if (state.snapshots?.readOnly) throw new Error(state.snapshots.ownerWarning())
       state.resetting = true
       try {
         state.kernelEpoch?.abort()
