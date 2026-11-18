@@ -89,6 +89,12 @@ await display({'image/png': Path('plot.png').read_bytes()})
 
 音频和视频作为文件交付，预览取决于 DSH。HTML 作为文件交付，不在插件中执行任意 HTML。
 
+## 子代理
+
+子代理模式默认关闭。在当前 Unharnessed 聊天运行 `/unharnessed-subagents on`，然后交代哪些工作可以并行委派。运行 `/unharnessed-subagents` 查看状态，运行 `/unharnessed-subagents off` 关闭此聊天的委派入口。开关随聊天保存，关闭后仍可在 DSH 子代理列表查看或停止已启动的子代理。
+
+子代理同样使用 Unharnessed，各有独立对话和 Python 变量，结果由 DSH 送回主聊天。主代理可以并行启动多个子代理，子代理只执行分配给自己的任务。Python 内置的 `agents` 提供 `spawn`、`list`、`send`、`wait` 和 `interrupt`。已有同名自定义变量时，可用 `_dsh_agents` 调用这些方法。
+
 ## 目标与自主检查
 
 ```text
